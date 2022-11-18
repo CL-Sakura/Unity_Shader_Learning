@@ -38,7 +38,7 @@ Shader "Shader Learning/Chapter5/Simple Shader"
             };
             
 
-            v2f vert (a2v v) : POSITION{
+            v2f vert (a2v v) {
                 v2f o;
                 o.pos  = UnityObjectToClipPos(v.vertex);
                 o.color = v.normal * 0.5 + fixed3(0.5, 0.5, 0.5);
